@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Employee Salary Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery.js"></script>
+    <script src="client.js"></script>
+</head>
+<body>
+    <h1>Employee Salary Calculator</h1>
+    <input class="employeeInput" type="text" placeholder="First Name" id="firstName"/>
+    <input class="employeeInput" type="text" placeholder="Last Name" id="lastName"/>
+    <input class="employeeInput" type="number" placeholder="ID" id="employeeId"/>
+    <input class="employeeInput" type="text" placeholder="Title" id="title"/>
+    <input class="employeeInput" type="number" placeholder="Annual Salary" id="annualSalary"/>
+    <button id="addEmployee">Submit</button>
+
+    <div id="outputArea">
+        <h3>Employees</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <!-- <th>Employee ID</th> -->
+                    <th>Title</th>
+                    <th>Salary</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="employeeRows"></tbody>
+        </table>
+    </div>
+
+    <div id="monthlyContainer">
+        Total Monthly: $<span>0</span>
+    </div>
+
+    <div id="colorContainer"></div>
+</body>
+</html>
